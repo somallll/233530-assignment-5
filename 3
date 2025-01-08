@@ -1,0 +1,27 @@
+@model List<CityButtonsApp.Models.City>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cities</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Cities</h1>
+        <div class="btn-group mb-3" role="group">
+            @foreach (var city in Model)
+            {
+                <button type="button" class="btn btn-primary">@city.Name</button>
+            }
+        </div>
+
+        <h2>Server List</h2>
+        <ul>
+            <li>Server 1</li>
+            <li>Server 2</li>
+            <li>Server 3</li>
+        </ul>
+    </div>
+</body>
+</html>
