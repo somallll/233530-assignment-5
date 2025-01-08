@@ -1,0 +1,20 @@
+@page "/city-buttons"
+@using CityButtonsApp.Data
+
+@inject CityRepository CityRepository
+
+<h3>City Buttons</h3>
+
+<div>
+    @foreach (var city in CityRepository.GetCities())
+    {
+        <button class="btn btn-primary m-1">@city</button>
+    }
+</div>
+
+<h3>Server List</h3>
+<ul>
+    <li>Server 1</li>
+    <li>Server 2</li>
+    <li>Server 3</li>
+</ul>
