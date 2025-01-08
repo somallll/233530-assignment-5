@@ -1,0 +1,19 @@
+using System.Collections.Generic;
+
+namespace CityButtonsApp.Models
+{
+    public static class CityRepository
+    {
+        public static List<City> GetCities()
+        {
+            return new List<City>
+            {
+                new City { Name = "New York" },
+                new City { Name = "Los Angeles" },
+                new City { Name = "Chicago" },
+                new City { Name = "Houston" },
+                new City { Name = "Phoenix" }
+            };
+        }
+    }
+}
