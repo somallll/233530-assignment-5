@@ -1,0 +1,14 @@
+using Microsoft.AspNetCore.Mvc;
+using CityButtonsApp.Models;
+
+namespace CityButtonsApp.Controllers
+{
+    public class HomeController : Controller
+    {
+        public IActionResult Index()
+        {
+            var cities = CityRepository.GetCities();
+            return View(cities);
+        }
+    }
+}
